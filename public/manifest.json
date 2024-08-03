@@ -1,7 +1,7 @@
 {
 	"theme_color": "#3172d3",
 	"background_color": "#3172d3",
-	"display": "browser",
+	"display": "standalone",
 	"scope": "/",
 	"start_url": "/",
 	"name": "Shield",

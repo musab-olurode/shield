@@ -86,22 +86,24 @@ function ReportIncident() {
 
 export default function Page() {
 	return (
-		<main className='container pt-[4.5rem]'>
+		<>
 			<Nav leftIcon='back' />
-			<section>
-				<div className='flex flex-col gap-y-2'>
-					{DISASTER_DETAILS.map(({ title, icon, link, dropDownChildren }) => (
-						<ActionItem
-							key={title}
-							leftIcon={icon}
-							title={title}
-							link={link}
-							variant='primary'
-							dropdownChildren={dropDownChildren}
-						/>
-					))}
-				</div>
-			</section>
-		</main>
+			<main className='container pt-[4.5rem]'>
+				<section>
+					<div className='flex flex-col gap-y-2'>
+						{DISASTER_DETAILS.map(({ title, icon, link, dropDownChildren }) => (
+							<ActionItem
+								key={title}
+								leftIcon={icon}
+								title={title}
+								link={link}
+								variant='primary'
+								dropdownChildren={dropDownChildren}
+							/>
+						))}
+					</div>
+				</section>
+			</main>
+		</>
 	);
 }

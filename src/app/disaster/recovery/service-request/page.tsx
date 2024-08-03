@@ -93,22 +93,24 @@ function ClaimInsurance() {
 
 export default function Page() {
 	return (
-		<main className='container pt-[4.5rem]'>
+		<>
 			<Nav leftIcon='back' />
-			<section>
-				<p>Service Request</p>
-				<div className='space-y-2 pt-2'>
-					{DISASTER_TYPES.map(({ title, icon, dropdownChildren }) => (
-						<ActionItem
-							key={title}
-							leftIcon={icon}
-							title={title}
-							variant='primary'
-							dropdownChildren={dropdownChildren}
-						/>
-					))}
-				</div>
-			</section>
-		</main>
+			<main className='container pt-[4.5rem]'>
+				<section>
+					<p>Service Request</p>
+					<div className='space-y-2 pt-2'>
+						{DISASTER_TYPES.map(({ title, icon, dropdownChildren }) => (
+							<ActionItem
+								key={title}
+								leftIcon={icon}
+								title={title}
+								variant='primary'
+								dropdownChildren={dropdownChildren}
+							/>
+						))}
+					</div>
+				</section>
+			</main>
+		</>
 	);
 }

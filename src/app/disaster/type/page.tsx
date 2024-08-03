@@ -37,22 +37,24 @@ const DISASTER_TYPES = [
 
 export default function Page() {
 	return (
-		<main className='container pt-[4.5rem]'>
+		<>
 			<Nav leftIcon='back' />
-			<section>
-				<p>Click on the type of disaster</p>
-				<div className='space-y-2 pt-2'>
-					{DISASTER_TYPES.map(({ title, icon, link }) => (
-						<ActionItem
-							key={title}
-							leftIcon={icon}
-							title={title}
-							link={link}
-							variant='primary'
-						/>
-					))}
-				</div>
-			</section>
-		</main>
+			<main className='container pt-[4.5rem]'>
+				<section>
+					<p>Click on the type of disaster</p>
+					<div className='space-y-2 pt-2'>
+						{DISASTER_TYPES.map(({ title, icon, link }) => (
+							<ActionItem
+								key={title}
+								leftIcon={icon}
+								title={title}
+								link={link}
+								variant='primary'
+							/>
+						))}
+					</div>
+				</section>
+			</main>
+		</>
 	);
 }

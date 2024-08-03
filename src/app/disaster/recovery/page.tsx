@@ -45,16 +45,18 @@ const DISASTER_CATEGORY = [
 
 export default function Page() {
 	return (
-		<main className='container pt-[4.5rem]'>
+		<>
 			<Nav leftIcon='back' />
-			<section>
-				<p className='pb-2'>Select the category</p>
-				<div className='grid grid-cols-2 gap-4'>
-					{DISASTER_CATEGORY.map((props) => (
-						<DisasterCategory key={props.title} {...props} />
-					))}
-				</div>
-			</section>
-		</main>
+			<main className='container pt-[4.5rem]'>
+				<section>
+					<p className='pb-2'>Select the category</p>
+					<div className='grid grid-cols-2 gap-4'>
+						{DISASTER_CATEGORY.map((props) => (
+							<DisasterCategory key={props.title} {...props} />
+						))}
+					</div>
+				</section>
+			</main>
+		</>
 	);
 }

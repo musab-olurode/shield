@@ -2,6 +2,8 @@ import '@/styles/globals.css';
 import { Inter as FontSans } from 'next/font/google';
 import { cn } from '@/lib/utils';
 import { Metadata, Viewport } from 'next';
+import InstallBanner from '@/components/install-banner';
+import IOSInstallInstructions from '@/components/ios-install-instructions';
 
 const fontSans = FontSans({
 	subsets: ['latin'],
@@ -58,6 +60,8 @@ export default function RootLayout({ children }: RootLayoutProps) {
 					fontSans.variable
 				)}
 			>
+				<IOSInstallInstructions />
+				<InstallBanner />
 				{children}
 			</body>
 		</html>

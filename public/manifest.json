@@ -28,5 +28,20 @@
 			"sizes": "512x512",
 			"type": "image/png"
 		}
+	],
+	"screenshots": [
+		{
+			"src": "/images/desktop-screenshot.png",
+			"sizes": "1366x768",
+			"type": "image/png",
+			"form_factor": "wide",
+			"label": "Desktop view of the app"
+		},
+		{
+			"src": "/images/mobile-screenshot.png",
+			"sizes": "412x915",
+			"type": "image/png",
+			"label": "Mobile view of the app"
+		}
 	]
 }
